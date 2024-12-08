@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +8,125 @@
         Personal portfolio
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <STYLE>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
-            background-color: blue;
-            color :white;
+
+        body {
+            background-color: rgb(4, 4, 32);
+            color: white;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height : 80px;
-            background-color: rgb(4,4,32
-            );
+            height: 80px;
+            background-color: rgb(5, 5, 48);
         }
-        nav ul{
-            display:flex;
+
+        nav ul {
+            display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        .left{
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(1, 102, 255);
+            font-size: 1.1rem;
+        }
+
+        .left {
             font-size: 1.5rem;
         }
-        .first{
+
+        .first {
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            margin: 50px 0;
+            align-items: center;
+            margin: 80px 0;
         }
-        .leftsection{
-            background-color: red;
-            width: 30px;
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 1.7rem;
+        }
+
+        .rightsection {
+            width: 80%;
+
+        }
+
+        .ranger {
+            color: blueviolet;
+        }
+        #element{
+            color:blueviolet;
+        }
+        .secound{
+            max-width: 80vw;
+            margin:Auto; 
         }
     </STYLE>
 </head>
+
 <body>
-    <header> 
+    <header>
         <nav>
-        <div class="left">Lakshya's portfolio</div>
-        <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>contact me</li>
-            </ul>
-        </div>
+            <div class="left">Lakshya's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">contact me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class ="first">
-            <div class="leftsection"></div>
-            <div class="roghtsection"></div>
+        <section class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="ranger"><b>Lakshya Raj</b></span>
+                <div id="one">
+                    and I am Enthusiast
+                    <div class="secound">Web Developer</div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="dev1.png" alt="">
+            </div>
+        </section>
+        <section class="secound">
+            <h1>Past Experience </h1>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Application Developer','Web Designer','Data Analyiser'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
+
 </html>
