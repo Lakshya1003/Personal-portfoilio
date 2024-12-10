@@ -24,6 +24,7 @@
             background-attachment: fixed;
             min-height: 200vh;
             transition: background-color 0.2s linear;
+            overflow-x: hidden;
         }
 
         main hr {
@@ -263,40 +264,86 @@
 
         footer {
             display: flex;
-            height: 297px;
+            height: 391px;
             justify-content: space-around;
             background-color: #160036;
-            margin: -6px;
-            top: 586px;
+            margin: 0px;
+            top: 566px;
             position: relative;
         }
 
         footer.cointainer {
             display: flex;
-            height: 80px;
         }
 
-        footer .cointainer >ol {
-            display: flex;
+        footer .cointainer>ol {
             justify-content: center;
         }
 
-        footer .cointainer> ol li {
+        footer .cointainer>ol li {
             list-style: none;
-            margin: 0 23px;
+  margin: 0px;
+  font-size: 23px;
+  right: 486px;
+  position: relative;
+  top: 68px;
+  padding: 0px;
         }
 
-        footer .cointainer> ol li a {
+        footer .cointainer>ol li a {
             text-decoration: none;
             color: rgb(255, 255, 255);
         }
 
-        footer .cointainer> ol li a:hover {
+        footer .cointainer>ol li a:hover {
             color: rgb(1, 102, 255);
-            font-size: 1.1rem;
+            font-size: 2.1rem;
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .icon{
 
+        footer .contact {
+            font-size: 21px;
+  position: relative;
+  bottom: 111px;
+  right: -19px;
+  padding: 0px;
+        }
+
+
+        .img-icon {
+            height: 60px;
+  position: relative;
+  top: 4px;
+  right: 20px;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  border-radius: 10px;
+        }
+
+        .icon .img-icon:hover {
+            transform: scale(2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 {
+            background-color: white;
+            width: 100vw;
+            height: 2px;
+            margin: 3px 0;
+            display: flex;
+            margin-top: 86px;
+            position: relative;
+            top: 569px;
+            right: -8px;
+        }
+        .ulist ul{
+            display: flex;
+            justify-content: center;
+        }
+        .ulist ul li{
+list-style: none;          
+  color: white;
         }
     </STYLE>
 </head>
@@ -307,17 +354,18 @@
             <div class="left">Lakshya's portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#Experience">Experience</a></li>
                     <li><a href="#certifications">certifications</a></li>
-                    <li><a href="/">contact me</a></li>
+                    <li><a href="#contact">contact me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="first">
+            <span id="home"></span>
             <div class="leftsection">
                 Hi, My name is <span class="ranger"><b>
                         Lakshya Raj
@@ -461,25 +509,57 @@
                 </div>
         </section>
     </main>
+    <div class="box1"></div>
     <footer>
-        <section class="cointainer">
-                    <ol>
+        <span id="contact"></span>
+        <section class="cointainer" style="position: relative;left: -289px;">
+            <ol >
                 <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Experience">Experience</a></li>
-                <li><a href="#certifications">certifications</a></li>
-                <li><a href="/">contact me</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="/">Contact me</a></li>
             </ol>
-            <ul>
-                <div class="icon">
-                    <li>
-                        <a href="www.linkedin.com/in/lakshya-raj-malviya-7422ab331"><img src="pngwing.com.png" alt="linkedin"></a>
-                    </li>
-                    </ul>
+            <div class="contact">
+                <h3>
+                    Contact email:
+                </h3>
+                <span class="mail">malviyalakshyaraj@gmail.com</span><br>
+                <h3>
+                    Contact no.
+                </h3>
+                <span class="mail">
+                    XXXXXXX950
+                </span>
             </div>
-            
-    </section>
-</footer>
+            <div class="icon" style="position: relative;top: -124px;">
+                <div class="ulist" style="position: relative;top: -136px;">
+                    <ul style="position: relative;top: -11px;right: -514px;">
+                        <li>
+                <!-- linkedin -->
+    <a href="https://www.linkedin.com/in/lakshya-raj-malviya-7422ab331/"><img src="pngwing.com.png"
+        alt="linkedin" class="img-icon"></a>
+    </li>
+    <li>
+    <!-- github -->
+        <a href="https://github.com/Lakshya1003/"><img src="pngwing.com(1).png" alt="github" class="img-icon"
+            style="position: relative;right: 0px;top: 4px;"></a>
+        </li>
+        <li>
+        <!-- facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100069280350708"><img src="fc.jpg" alt="facebook" class="img-icon"
+                style="position: relative;right: -17px;top: 3px;"></a>
+            </li>
+            <li>
+                <!-- twitter{X} -->
+                <a href="https://x.com/LAKSHYA1006/"><img src="twitter.jpg" alt="X" class="img-icon"
+                    style="position: relative;right: -39px;top: 4px;"></a>
+                </li>
+                </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
