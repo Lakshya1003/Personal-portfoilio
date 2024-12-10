@@ -18,14 +18,13 @@
         }
 
         body {
+            font-family: poppins;
             color: white;
-            background: linear-gradient(to bottom, rgb(4, 4, 32), rgb(87, 87, 230)); 
-            background-attachment:scroll; 
-            min-height: 200vh; 
+            background: linear-gradient(to bottom, rgb(4, 4, 32), rgb(87, 87, 230));
+            background-attachment: fixed;
+            min-height: 200vh;
             transition: background-color 0.2s linear;
         }
-
-
 
         main hr {
             height: 2px;
@@ -81,7 +80,7 @@
         }
 
         .leftsection {
-            font-size: 1.7rem;
+            font-size: 2.1rem;
         }
 
         .rightsection {
@@ -113,11 +112,11 @@
         }
 
         .ranger {
-            color: blueviolet;
+            color: #9522ff;
         }
 
         #element {
-            color: blueviolet;
+            color: #9522ff;
         }
 
         .one {
@@ -136,6 +135,7 @@
         }
 
         .text-grey {
+
             color: grey;
         }
 
@@ -152,7 +152,7 @@
             height: 93px;
             width: 2px;
             background-color: white;
-            margin: 0px 100px;
+            margin: 0px 120px;
         }
 
         .image {
@@ -179,6 +179,125 @@
             right: 63px;
             text-align: center;
         }
+
+        /* certification Css starts here */
+        .certification {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .certification>div {
+            width: 30%;
+        }
+
+        .ibm-cert>h1 {
+            position: relative;
+            top: 97px;
+            right: 422px;
+            width: 490px;
+            margin: -24px;
+        }
+
+
+        .certbold {
+            font-size: 54px;
+            position: relative;
+            top: -174px;
+            right: 50px;
+            margin: 0px;
+            padding: 24px;
+        }
+
+        .leftibm {
+            width: 80%;
+            position: relative;
+        }
+
+        .leftibm .ibmcerti {
+            height: 380px;
+            position: relative;
+            top: 157px;
+            right: 451px;
+            margin: -7px;
+        }
+
+        .rightibm {
+            font-size: 1.7rem;
+        }
+
+        .rightibm .desc {
+            font-size: 22px;
+            position: relative;
+            top: 310px;
+            margin: -283px;
+            left: 128px;
+        }
+
+        /* lnct certifications */
+        .rightlnct {
+            width: 80%;
+            position: relative;
+        }
+
+        .lnct-cert>h1 {
+            position: relative;
+            top: 787px;
+            right: 942px;
+            font-size: 29px;
+            width: 335px;
+            margin: 25px;
+        }
+
+        .lnct-desc {
+            position: relative;
+            top: 862px;
+            right: 847px;
+            font-size: 19px;
+            margin: -80px;
+        }
+
+        /* footer CSS================================================================================================================ */
+
+        footer {
+            display: flex;
+            height: 297px;
+            justify-content: space-around;
+            background-color: #160036;
+            margin: -6px;
+            top: 586px;
+            position: relative;
+        }
+
+        footer.cointainer {
+            display: flex;
+            height: 80px;
+        }
+
+        footer .cointainer >ol {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer .cointainer> ol li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        footer .cointainer> ol li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        footer .cointainer> ol li a:hover {
+            color: rgb(1, 102, 255);
+            font-size: 1.1rem;
+        }
+        .icon{
+
+        }
     </STYLE>
 </head>
 
@@ -189,8 +308,9 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#certifications">certifications</a></li>
                     <li><a href="/">contact me</a></li>
                 </ul>
             </div>
@@ -199,10 +319,12 @@
     <main>
         <section class="first">
             <div class="leftsection">
-                Hi, My name is <span class="ranger"><b>Lakshya Raj</b></span>
+                Hi, My name is <span class="ranger"><b>
+                        Lakshya Raj
+                    </b></span>
                 <div id="one">
-                    and I am Enthusiast
-                    <div class="secound">Web Developer</div>
+                    and I am Enthusiastic
+                    <br>
                     <span id="element"></span>
                 </div>
             </div>
@@ -215,15 +337,30 @@
         </section>
         <section class="secound">
             <hr>
-            <span class="text-grey"> I've done many things up on this coding journey</span>
-            <h1>Qualifications and Past Experience </h1>
+            <section id="about">
+                <span class="text-grey"><i>
+                        I am a passionate college student exploring the intersection of technology and creativity.
+                        Proficient in JavaScript, HTML, and CSS, I've developed innovative web projects, including
+                        advanced
+                        to-do lists and responsive designs. My interest in AI and IoT drives my learning, evidenced by
+                        an AI
+                        course and an IoT-integrated agriculture project. With skills in Fusion, filmora, etc and a
+                        strong
+                        foundation in data structures, I aim to craft solutions that blend functionality and
+                        innovation.</span>
+                </i>
+            </section>
+
+            <h1 id="Experience"><b>
+                    Qualifications and Past Experience </h1>
+            </b>
             <div class="box">
                 <!-- personal things -->
                 <div class="vertical">
                     <img class="image" src="school boy.png">
                     <div class="vertical-text">
                         <b>
-                            I've completed my<br> High school in 2022
+                            Completed my<br> High school in 2022
                         </b>
                     </div>
                 </div>
@@ -243,9 +380,11 @@
                     <img class="image" src="sprinkler.png">
                     <div class="vertical-text">
                         <b>
-                            Worked as R&D enginner in FarmCS<br>
+                            Worked as R&D Enginner in FarmCS<br>
                         </b>
-                        (sept/24 - nov/24)
+                        <span class="date" style="font-size: 15px;">
+                            (sept/24-nov/24)
+                        </span>
                     </div>
                 </div>
                 <!-- Adv todo -->
@@ -253,20 +392,99 @@
                     <img class="image" src="todo].png">
                     <div class="vertical-text">
                         <b>
-                            Created prototype of Advance Todo list
+                            Created Prototype of Advance Todo list
                         </b>
                         <br>
                         {project}
                     </div>
                 </div>
+                <!--Chatbot -->
+                <div class="vertical">
+                    <img class="image" src="chatbot.png">
+                    <div class="vertical-text">
+                        <b>
+                            Contributed as Frontend Enginner in SIH project
+                        </b>
+                        <br>
+                        {project}
+                    </div>
+
+                </div>
+
             </div>
         </section>
+        <section class="certification" id="certifications">
+            <hr style="position: relative;top: 216px;margin: 94px;">
+            <b class="certbold"><u>Certifications
+                </u>
+            </b>
+            <div class="ibm-cert">
+                <h1>
+                    Fundamentals of AI - IBM SkillBuild Program
+                </h1>
+                <div class="leftibm">
+                    <img class="ibmcerti" src="ibm certificate.jpeg" alt="ibm certificate">
+                </div>
+            </div>
+            <div class="rightibm">
+
+                <div class="desc">
+                    Successfully completed a 5.5-hour course on the Fundamentals of AI through the IBM SkillBuild
+                    program, covering core concepts, historical context, and the applications of AI in modern
+                    technology. This course provided hands-on insights into AI systems, search techniques, and
+                    real-world AI integration, enhancing my knowledge and technical expertise in artificial
+                    intelligence.
+
+                </div>
+            </div>
+            <brc>
+                <!-- lnct certificate -->
+                <div class="lnct-cert">
+                    <h1>
+                        "Exploring the Future: AI in IoT Workshop"
+                    </h1>
+                    <div class="leftlnct">
+                        <div class="lnct-desc">
+                            I attended an insightful workshop on AI in IoT at my college, exploring the synergy between
+                            Artificial Intelligence and the Internet of Things. The session covered AI fundamentals, IoT
+                            integration, and real-world applications like smart agriculture and automation. I gained
+                            hands-on experience with IoT devices and AI algorithms, deepening my understanding of their
+                            potential to create intelligent, efficient systems. This experience fueled my interest in
+                            advancing innovative solutions in this dynamic field.
+                        </div>
+                    </div>
+                    <div class="rightlnct">
+
+                        <img class="lnctcerti" src="lnct certificate.jpeg" alt="lnct certificate" style="height: 380px;position: relative;top: 628px;
+  right: 156px;">
+                    </div>
+                </div>
+        </section>
     </main>
+    <footer>
+        <section class="cointainer">
+                    <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#certifications">certifications</a></li>
+                <li><a href="/">contact me</a></li>
+            </ol>
+            <ul>
+                <div class="icon">
+                    <li>
+                        <a href="www.linkedin.com/in/lakshya-raj-malviya-7422ab331"><img src="pngwing.com.png" alt="linkedin"></a>
+                    </li>
+                    </ul>
+            </div>
+            
+    </section>
+</footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Application Developer', 'Web Designer', 'Data Analyiser'],
-            typeSpeed: 50,
+            strings: ['Web Developer', 'Web Application Developer', 'Web Designer', 'Data Analyiser', 'Chatbot Designer'],
+            typeSpeed: 100,
         });
     </script>
 </body>
